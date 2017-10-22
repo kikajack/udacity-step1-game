@@ -44,6 +44,7 @@ Player.prototype.update = function(keyCode) {
 		case 'up':
 			this.y > 0 ? this.y-- : '';
 			if (this.y == 0) {
+				alert("胜利");
 				player = new Player();
 			}
 			break;
